@@ -1,7 +1,7 @@
 var congoProxy = require("congo-proxy");
 var CongoReactNativeInvoker = require("congo-react-native-js").CongoReactNativeInvoker;
 
-var invoker = new CongoReactNativeInvoker("ReactBridge");
+var invoker = new CongoReactNativeInvoker("ReactBridge", "remoteCallResults");
 var proxy = congoProxy("myService", invoker);
 proxy.registerMethod("someMethod");
 proxy.registerObservable("streamThatNeverEnds");

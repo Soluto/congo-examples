@@ -41,7 +41,7 @@ public class MainActivity extends ReactActivity {
         services.put("myService", new MyService());
         return Arrays.asList(
                 new MainReactPackage(),
-                new ReactNativeAndroidBridgePackage(services, "ReactBridge")
+                new ReactNativeAndroidBridgePackage(services, "ReactBridge", "remoteCallResults")
         );
     }
 }
