@@ -1,7 +1,8 @@
 var congoProxy = require("congo-proxy");
-var CongoReactNativeInvoker = require("congo-react-native-js").CongoReactNativeInvoker;
 
-var invoker = new CongoReactNativeInvoker("ReactBridge", "remoteCallResults");
+var CongoAndroidWebViewInvoker = require("congo-android-webview-js").congoAndroidWebViewInvoker;
+var invoker = new CongoAndroidWebViewInvoker("bridge");
+
 var proxy = congoProxy("myService", invoker);
 proxy.registerMethod("someMethod");
 proxy.registerObservable("streamThatNeverEnds");
@@ -11,7 +12,7 @@ var myService = proxy.build();
 
 myService.someMethod().then(function(result) {
     console.log(result);
-});
+})
 
 myService.streamThatNeverEnds()
  .take(5)

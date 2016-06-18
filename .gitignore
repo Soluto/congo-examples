@@ -1,2 +1,4 @@
 gradle
 *.iml
+.idea
+node_modules

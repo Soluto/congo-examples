@@ -1,0 +1,22 @@
+{
+  "name": "webview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "congo-proxy": "0.0.1",
+    "congo-android-webview-js": "0.0.2",
+    "bluebird": "^3.4.0",
+    "rx": "^4.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-rename": "^1.2.2",
+    "merge2": "^1.0.1",
+    "rimraf": "^2.4.3"
+  }
+}
