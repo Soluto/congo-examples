@@ -1,6 +1,6 @@
 How to run the example:
 
-1. Clone remote-exeuction repositoty
+1. Clone congo-examples repositoty
 
 2. from  .\androidWebViewApp\hybridApp -> npm install
 
