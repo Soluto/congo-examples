@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "24"
+
+    defaultConfig {
+        applicationId "guy.testproject"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        jackOptions {
+            enabled true
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    compile 'com.jaredrummler:android-processes:1.0.8'
+    compile 'com.pubnub:pubnub:4.0.1'
+    compile 'io.reactivex:rxjava:1.1.5'
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'soluto:congo-core-java:0.0.4'
+    compile 'soluto:congo-pubnub-java:0.0.2'
+}
