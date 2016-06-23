@@ -7,9 +7,9 @@ var pnConfiguration = {
 };
 
 var invoker = new CongoPubNubInvoker(pnConfiguration, "request_b4d5b93c-9a0a-4386-b1b4-0e7d6be4e7d2", "response_b4d5b93c-9a0a-4386-b1b4-0e7d6be4e7d2");
+
 var proxy = congoProxy("someService", invoker);
 proxy.registerObservable("getTime");
-proxy.registerObservable("getRandomNumbers");
 proxy.registerObservable("getRunningProcessesCount");
 proxy.registerObservable("getLogs");
 

@@ -5,7 +5,7 @@ android {
     buildToolsVersion "24"
 
     defaultConfig {
-        applicationId "guy.testproject"
+        applicationId "pubnub.example"
         minSdkVersion 15
         targetSdkVersion 23
         versionCode 1

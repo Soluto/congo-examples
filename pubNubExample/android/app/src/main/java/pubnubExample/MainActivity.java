@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.pubnub.api.PNConfiguration;
 
-import guy.testproject.R;
 import soluto.congo.core.ControllerHandler;
 import soluto.congo.core.RemoteCallListener;
 import soluto.congo.core.RemoteCallResponder;
