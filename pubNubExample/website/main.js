@@ -15,11 +15,8 @@ var startTimeButtonClicks = DOM.click(document.querySelector("#startTimeButton")
 var stopTimeButtonClicks = DOM.click(document.querySelector("#stopTimeButton"));
 var timeView = document.querySelector("#timeView");
 
-//const getTime = () => Observable.interval(1000).map(() => new Date());
-const getTime = () => deviceService.getTime();
-
 startTimeButtonClicks
-    .flatMap(() => getTime().takeUntil(stopTimeButtonClicks))
+    .flatMap(() => deviceService.getTime().takeUntil(stopTimeButtonClicks))
     .map(time => timeView.innerText = time)
     .subscribe();
 // </editor-fold>

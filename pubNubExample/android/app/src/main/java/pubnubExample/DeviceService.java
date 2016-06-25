@@ -30,9 +30,9 @@ public class DeviceService {
     //endregion
 
     //region Time
-    public Observable<String> getTime() {
+    public Observable<Date> getTime() {
         return Observable.interval(1000, TimeUnit.MILLISECONDS)
-                .map(t -> new Date().toString());
+                .map(t -> new Date());
     }
     //endregion
 
