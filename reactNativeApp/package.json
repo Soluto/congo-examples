@@ -3,12 +3,16 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node_modules/react-native/packager/packager.sh"
+    "start": "node_modules/react-native/packager/packager.sh",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "react": "^0.14.8",
-    "react-native": "0.23.1",
+    "react-native": "0.54.0",
     "congo-proxy": "0.0.1",
-    "congo-react-native-js": "0.0.2"
-  }
+    "congo-react-native-js": "0.0.2",
+    "snyk": "^1.165.0"
+  },
+  "snyk": true
 }
