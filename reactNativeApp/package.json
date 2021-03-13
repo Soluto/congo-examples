@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "react": "^0.14.8",
-    "react-native": "0.23.1",
+    "react-native": "0.64.0",
     "congo-proxy": "0.0.1",
     "congo-react-native-js": "0.0.2"
   }
