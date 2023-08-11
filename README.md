@@ -1,4 +1,2 @@
-![No Maintenance Intended](http://unmaintained.tech/badge.svg)
-
-# Deprecation
-This repository is deprecated and no longer supported.
+## DEPRECATED
+This repository is no longer maintained and has been archived. Feel free to browse the code, but please migrate to other solutions.
